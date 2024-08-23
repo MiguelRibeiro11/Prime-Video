@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Video</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação e aventura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Anime</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Comédia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Drama</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+      </ul>
+      <img src="img/logo.png" alt="Logo da Alurabooks" class="container__imagem">
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Ação e aventura</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Anime</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Comédia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Drama</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Terror</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Filmes recentes</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe qual vai ser a sua próxima escolha?</h2>
+    <p class="banner__texto">Melhor site de streaming do mundo!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual sua próxima busca?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="img/assasino-por-acaso.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/depois-do-apoclipse.png"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/suicida.png" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/the-shift.png" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/um-lugar-silencioso.png" alt="Livro sobre portugol" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/uma-canção.png" alt="Livro sobre acessibilidade" />
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Você também pode assistir</h3>
+            <h2 class="descrição__titulo-livro">Guerra sem regras</h2>
+            <p class="descrição__texto">
+              O longa é baseado em um documentário do Departamento de Guerra Britânico, onde o mesmo foi elaborado em eventos reais.
+            </p>
+          </div>
+          <img src="img/guerra-sem-regras.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vistos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide"><img src="img/a-garota.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/a-presa.png" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/a-teia.png" alt="Livro sobre javascript assertivo da alurabooks">
+          </div>
+          <div class="swiper-slide"><img src="img/abigail.png" alt="Livro Guia front end"></div>
+          <div class="swiper-slide"><img src="img/o-homem.png" alt="Livro sobre portugol"></div>
+          <div class="swiper-slide"><img src="img/zona-de-risco.png" alt="livro sobre acessibilidade"></div>
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="card__descrição">
+
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Melhor avaliação</h3>
+            <h2 class="descrição__titulo-livro">O Predestinado</h2>
+            <p class="descrição__texto">Um agente precisa viajar no tempo para impedir a ação de um criminoso responsável por um ataque que mata milhares de pessoas.
+            </p>
+          </div>
+
+          <img src="img/predestinado.png" class="descrição__imagem">
+        </div>
+
+
+        <div class="card__botões">
+
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          </ul>
+
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Esportes</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Infantis</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Suspense e mistério</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Romance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ação</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Ficção científica</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Documentário</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Anime</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Filmes, séries, animes exclusivos entre outros.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
